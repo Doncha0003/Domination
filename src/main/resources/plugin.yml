@@ -1,0 +1,10 @@
+name: ZoneRush
+version: ${version}
+main: com.tsubuserver.zonerush.ZoneRush
+api-version: '1.21'
+
+dependencies:
+  server:
+    WeaponMechanics:
+      load: BEFORE
+      required: true

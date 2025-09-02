@@ -1,0 +1,216 @@
+system:
+  range: 5
+  check_duration: 5
+
+  matching_complete_after_wating: 30
+
+  matching_complete_teleport_duration: 3
+
+  # TP後、ラウンドタイトルが表示されるまでの遅延時間
+  round_start_teleport_delay: 2
+
+  # ラウンドタイトルの表示時間
+  round_title_display_duration: 2
+
+  # 武器購入フェーズの持続時間
+  buy_phase_duration: 30
+
+  # カウントダウンの時間
+  countdown_duration: 3
+
+  # 決着がつかなかった場合のラウンド終了までの時間
+  round_timeout_duration: 180
+
+  # ラウンド終了から次のラウンドが始まるまでのインターバル時間
+  inter_round_delay: 5
+
+score:
+  winner_of_round: 500
+  loser_of_round: 250
+
+  winner_of_game: 1000
+  loser_of_game: 500
+
+  get_spot: 100
+  after_get_spot_per_sec: 5
+
+  killed: -50
+  killer: 100
+
+lobby_world: world
+lobby_pos: 10/60/10
+
+messages:
+  matching_complete_after_wating: "マッチングカウンター停止。残り30秒"
+
+# 渡すお金の設定
+initial_equipment:
+  # ラウンド開始直前
+  base: 1000
+  round1:
+    # ラウンド1の勝者に渡す額
+    winner: 1500
+    # ラウンド1の敗者に渡す額
+    loser: 500
+  round2:
+    # ラウンド2の勝者に渡す額
+    winner: 1500
+    # ラウンド2の敗者に渡す額
+    loser: 500
+  round3:
+    # ラウンド3の勝者に渡す額
+    winner: 1500
+    # ラウンド3の敗者に渡す額
+    loser: 500
+  round4:
+    # ラウンド4の勝者に渡す額
+    winner: 1500
+    # ラウンド4の敗者に渡す額
+    loser: 500
+
+worlds:
+  world1: # ワールド名
+    type: 2v2 # 2~4 vs 2~4
+    default_pos_blue: 0/-60/10
+    default_pos_red: 10/-60/0
+    default_pos: 10/-60/0
+    spots:
+      # , や / で区切る
+      - name: 1
+        pos: 10/-60/10
+      - name: 1
+        pos: 10/-60/10
+      - name: 1
+        pos: 10/-60/10
+      - name: 1
+        pos: 10/-60/10
+      - name: 1
+        pos: 10/-60/10
+
+    barriers:
+      # バリアブロックを埋めるコマンドブロックを起動する**RSブロックを置く位置**
+      fill: 10/20/30
+      # バリアブロックを取り除くコマンドブロックを起動する**RSブロックを置く位置**
+      remove: 10/20/40
+
+  world2:
+    type: 1v1 # 1 vs 1
+    default_pos_blue: 0/-60/10
+    default_pos_red: 10/-60/0
+    default_pos: 10/-60/0
+    spots:
+      # , や / で区切る
+      - name: 1
+        pos: 10/-60/10
+      - name: 1
+        pos: 10/-60/10
+      - name: 1
+        pos: 10/-60/10
+      - name: 1
+        pos: 10/-60/10
+      - name: 1
+        pos: 10/-60/10
+
+    barriers:
+      fill: 10/20/30
+      remove: 10/20/40
+
+  world3: # ワールド名
+    type: 2v2 # 2~4 vs 2~4
+    default_pos_blue: 0/-60/10
+    default_pos_red: 10/-60/0
+    default_pos: 10/-60/0
+    spots:
+      # , や / で区切る
+      - name: 1
+        pos: 10/-60/10
+      - name: 1
+        pos: 10/-60/10
+      - name: 1
+        pos: 10/-60/10
+      - name: 1
+        pos: 10/-60/10
+      - name: 1
+        pos: 10/-60/10
+
+    barriers:
+      fill: 10/20/30
+      remove: 10/20/40
+
+  world4:
+    type: 1v1 # 1 vs 1
+    default_pos_blue: 0/-60/10
+    default_pos_red: 10/-60/0
+    default_pos: 10/-60/0
+    spots:
+      # , や / で区切る
+      - name: 1
+        pos: 10/-60/10
+      - name: 1
+        pos: 10/-60/10
+      - name: 1
+        pos: 10/-60/10
+      - name: 1
+        pos: 10/-60/10
+      - name: 1
+        pos: 10/-60/10
+
+    barriers:
+      fill: 10/20/30
+      remove: 10/20/40
+
+  world5: # ワールド名
+    type: 2v2 # 2~4 vs 2~4
+    default_pos_blue: 0/-60/10
+    default_pos_red: 10/-60/0
+    default_pos: 10/-60/0
+    spots:
+      # , や / で区切る
+      - name: 1
+        pos: 10/-60/10
+      - name: 1
+        pos: 10/-60/10
+      - name: 1
+        pos: 10/-60/10
+      - name: 1
+        pos: 10/-60/10
+      - name: 1
+        pos: 10/-60/10
+
+    barriers:
+      fill: 10/20/30
+      remove: 10/20/40
+
+shop:
+  AK_47:
+    price: 10050
+  FN_FAL:
+    price: 50
+  FR_5_56:
+    price: 50
+  M4A1:
+    price: 50
+  STG44:
+    price: 50
+  MG34:
+    price: 50
+  Kar98k:
+    price: 50
+  50_GS:
+    price: 50
+  357_Magnum:
+    price: 50
+  Fatman:
+    price: 50
+  RPG_7:
+    price: 50
+  Origin_12:
+    price: 50
+  R9_0:
+    price: 50
+  AX_50:
+    price: 50
+  AUG:
+    price: 50
+  Uzi:
+    price: 50
