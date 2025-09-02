@@ -1,3 +1,3 @@
-## Tsubusaba: ZoneRush リポジトリ
+## (Tsubusaba): ドミネーション リポジトリ
 
-このリポジトリは、Tsubusabaの主要ゲームモードである陣取りPvP「**ZoneRush**」に関するものです。
+このリポジトリは、Tsubusabaの主要ゲームモードである陣取りPvP「**ドミネーション**」に関するものです。
